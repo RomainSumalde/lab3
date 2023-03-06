@@ -677,6 +677,8 @@ section {
 
 .about .image {
   background: url("../img/pics/2.jpg") center center no-repeat;
+  background: url("../img/pics/1.jpg") center center no-repeat;
+  background: url("../img/pics/5.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
