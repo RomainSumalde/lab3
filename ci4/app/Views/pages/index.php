@@ -1,293 +1,358 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="author" content="Romain Sumalde">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Website</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="logo" href="Images/Minimalist Logo.png">
-<script src="https://kit.fontawesome.com/48931abacc.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- Header Section -->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Images/Minimalist Logo1.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <span class="text first-text">I'm a</span>
-                <span class="text sec-text">Programmer</span>
-                <h1>Hi, I'm <span>Romain</span><br>Sumalde</h1>
-            </div>
-        </div>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Romain Sumalde</h1>
+      <h2 data-text="Programmer" class="text sec">Programmer</h2>
     </div>
-    <!--About Section-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/picture.png" alt="picture">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello! My name is Romain Gerard C. Sumalde. I graduated in Software Development Strand from iACADEMY, Makati City. 
-                   Besides programming I have an immense interest in gaming, cycling, video editing and photography.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>DaVinci Resolve</span><br>Video Editor</li>
-                            <li><span>Full Stack Developer</span><br>Programmer</li>
-                            <li><span>Photography</span><br>iPhone Photography</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2019 - 2021</span><br>C++, C#, and Java</li>
-                            <li><span>2020 - 2022</span><br>DaVinci Resolve</li>
-                            <li><span>2022 - Present</span><br>Python, Java, Web Dev, and Mobile Prog</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2018 - 2019</span><br>San Isidro Catholic School</li>
-                            <li><span>2019 - 2021</span><br>iACADEMY</li>
-                            <li><span>2021 - Present</span><br>Asia Pacific College</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>About Me</span>
+          <h2>About Me</h2>
+          <p></p>
         </div>
-    </div>
-    <!-- Services -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="service-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Programming</h2>
-                    <p>With my knowledge on C++, C#, Java, and Python. I am confident that I can help you with your project in programming.</p>
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Romain Gerard Sumalde</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.apcwebprog.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pasay City, Philippines</span></li>
+                  </ul>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Video Editing</h2>
-                    <p>After learning how to use DaVinci Resolve I can edit videos for gaming montage, cinematic, and other types of editing</p>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>Mobile and Internet</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rcsumalde@student.apc.edu.ph</span></li>  
+                  </ul>
                 </div>
-                <div>
-                    <i class="fa-solid fa-camera-retro"></i>
-                    <h2>Photography</h2>
-                    <p>My hobby for photography just started this year so I am not yet confident with my photography skills.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <!-- Pictures Grid -->
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-            </div>
-            <!-- Videos Grid -->
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-                <div class="work">
-                    <img src="Images/background.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-square-envelope"></i> rcsumalde@student.apc.edu.ph</p>
-                        <p><i class="fa-solid fa-square-phone"></i> 09xx-xxx-xxxx</p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://github.com/RomainSumalde"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/romain-gerard-sumalde-49272a21a/"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <!-- About Me New -->
+              <div id="aboutM">
+                <div class="containerM">
+                    <div class="rowM">
+                        <div class="about-col-2">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>DaVinci Resolve</span></li>
+                                    <li><span>Full Stack Developer</span></li>
+                                    <li><span>Photography</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Android Studio</span></li>
+                                    <li><span>DaVinci Resolve</span></li>
+                                    <li><span>Power Apps</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>San Isidro Catholic School</span></li>
+                                    <li><span>iACADEMY</span></li>
+                                    <li><span>Asia Pacific College</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-right">
-                        <!--
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        -->
-                        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="text" name="email" placeholder="Email" required>
-                            <textarea name="comment"  placeholder="Message" rows="6" cols="40"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <?php
-                        // define variables and set to empty values
-                        $nameErr = $emailErr = "";
-                        $name = $email = $comment = "";
-
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                            if (empty($_POST["name"])) {
-                                $nameErr = "Name is required";
-                            } else {
-                                $name = test_input($_POST["name"]);
-                            // check if name only contains letters and whitespace
-                            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-                                $nameErr = "Only letters and white space allowed";
-                            }
-                        }
-  
-                        if (empty($_POST["email"])) {
-                            $emailErr = "Email is required";
-                        } else {
-                            $email = test_input($_POST["email"]);
-                            // check if e-mail address is well-formed
-                            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                                $emailErr = "Invalid email format";
-                            }
-                        }
-
-                        if (empty($_POST["comment"])) {
-                            $comment = "";
-                        } else {
-                            $comment = test_input($_POST["comment"]);
-                        }
-                    }
-
-                    function test_input($data) {
-                        $data = trim($data);
-                        $data = stripslashes($data);
-                        $data = htmlspecialchars($data);
-                        return $data;
-                    }
-                    ?>
-
-                    <?php
-                        if ($_SERVER["REQUEST_METHOD"] == "POST") 
-                        {$servername = "localhost";
-                            $username = "webprogmi211";
-                            $password = "webprogmi211";
-                            $dbname = "webprogmi211";
-                    	// Create connection
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                    	// Check connection
-                    	if ($conn->connect_error) {
-                            die("Connection failed: " . $conn->connect_error);
-                    	}
-                    	$sql = "INSERT INTO rcsumalde_MyGuests (name, email, comment)
-                    	VALUES ('$name', '$email', '$comment')";
-                        if ($conn->query($sql) === TRUE) {
-                            echo "New record created successfully";
-                    	} else {
-                            echo "Error: " . $sql . "<br>" . $conn->error;
-                    	}
-                    	$conn->close();
-                    }
-                    ?>
-                        <!-- <span id="msg"></span> -->
-                    </div>
                 </div>
             </div>
+            <script>
+              var tablinks = document.getElementsByClassName("tab-links");
+              var tabcontents = document.getElementsByClassName("tab-contents");
+              function opentab(tabname){
+            
+              for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+            }
+            </script>
+              <!-- End About Me New -->
+            </div><!-- End .content-->
+
+            <div class="skills-content ps-lg-4">
+              <div class="progress">
+                <span class="skill">HTML <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-    <!-- JavaScript -->
-    <script>
-        // JavaScript lesson 18.9 Arrow Function
-        // Moving Text
-        const text = document.querySelector(".sec-text");
-        const textLoad = () => {
-            setTimeout(() => {
-                text.textContent = "Programmer";
-            }, 0);
-            setTimeout(() => {
-                text.textContent = "Video Editor";
-            }, 4000);
-            setTimeout(() => {
-                text.textContent = "Photographer";
-            }, 8000);
-        }
-        textLoad();
-        setInterval(textLoad, 12000);
-        
-        // JavaScript lesson 10.3 For of Loop
-        // Change Tab on About Me
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+      </div>
+    </section><!-- End About Me Section -->
 
-        // JavaScript lesson 23 Window 
-        // Side Menu
-        var side = document.getElementById("sidemenu");
-        function openMenu(){
-            side.style.right = "0";
-        }
-        function closeMenu(){
-            side.style.right = "-200px";
-        }
-        
-        // JavaScript lesson 24 Web API
-        // Google sheet
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz66qz66GEof0s-zvhGYCRYmPHnzC_aqWIWMjLS_NbiY2VGc9G9bG1vbQAnSHkgVsHSRg/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        
-        // JavaScript lesson 15.1 Errors
-        // Message Pop Up
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function() {
-                        msg.innerHTML = ""
-                    }, 3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-</body>
-</html>
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="public/img/guestIcon.png" class="testimonial-img" alt="">
+                <h3>Name</h3>
+                <h4>Guest</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Message
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="public/img/guestIcon.png" class="testimonial-img" alt="">
+                <h3>Name</h3>
+                <h4>Guest</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Message
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="public/img/guestIcon.png" class="testimonial-img" alt="">
+                <h3>Name</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Message
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="public/img/guestIcon.png" class="testimonial-img" alt="">
+                <h3>Name</h3>
+                <h4>Guest</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Message
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="public/img/guestIcon.png" class="testimonial-img" alt="">
+                <h3>Name</h3>
+                <h4>Guest</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Message
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= My Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>My Portfolio</span>
+          <h2>My Portfolio</h2>
+          <p>Here are some of my works</p>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="img/pics/10.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="img/pics/20.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="img/pics/9.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="img/pics/21.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="img/pics/14.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="img/pics/29.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="img/pics/11.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="img/pics/13.jpg" class="img-fluid" alt=""></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="img/pics/7.jpg" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End My Portfolio Section -->
+
+    <!-- ======= Contact Me Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact Me</span>
+          <h2>Contact Me</h2>
+          <p>Get in touch</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-share-alt"></i>
+                  <h3>Social Profiles</h3>
+                  <div class="social-links">
+                    <a href="https://twitter.com/RomainSumalde" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/Romain.Sumalde/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/romainsumalde/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/romain-gerard-sumalde-49272a21a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Me</h3>
+                  <p>rcsumalde@student.apc.edu.ph</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Me</h3>
+                  <p>+63 912 345 6789</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+          <?= session()->getFlashdata('error') ?>
+            <form action="create" method="post" role="form" class="php-email-form">
+            <?= csrf_field() ?>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message">Error:</div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" name="submit" value="Create guest item">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Me Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>

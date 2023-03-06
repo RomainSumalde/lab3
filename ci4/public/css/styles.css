@@ -79,7 +79,7 @@ nav ul li a:hover::after{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
     border-left: 2px solid #8ca2c1;
     animation: animate 4s steps(12) infinite;
 }
@@ -111,7 +111,6 @@ nav ul li a:hover::after{
 }
 .about-col-1{
     flex-basis: 35%;
-
 }
 .about-col-1 img{
     width: 100%;
