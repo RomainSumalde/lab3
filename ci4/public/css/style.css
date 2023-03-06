@@ -676,7 +676,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/pics/2.jpg") center center no-repeat;
+  background: url("../img/pics/1.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -723,7 +723,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("https://github.com/RomainSumalde/lab3/blob/main/ci4/public/img/pics/2.JPG") no-repeat;
+  background: url("../img/pics/3.JPG") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
