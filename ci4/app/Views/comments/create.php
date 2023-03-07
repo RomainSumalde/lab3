@@ -62,7 +62,7 @@
             <?= validation_list_errors() ?>
 	    </div>
       <div class="col-lg-6">
-        <form action="/lab3/ci4/public/comments" method="post" role="form" class="php-email-form">
+        <form action="~rcsumalde/lab3/ci4/public/comments" method="post" role="form" class="php-email-form">
         <?= csrf_field() ?>
           <div class="row">
             <div class="col-md-6 form-group">
