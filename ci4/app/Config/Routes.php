@@ -3,7 +3,7 @@
 namespace Config;
 
 // Create a new instance of our RouteCollection class.
-$routes = Services::routes();
+//$routes = Services::routes();
 
 /*
  * --------------------------------------------------------------------
@@ -34,7 +34,10 @@ $routes->get('/', 'Home::index');
 use App\Controllers\Guest;
 use App\Controllers\News;
 use App\Controllers\Pages;
+use App\Controllers\Comments;
 
+$routes->match(['get', 'post'], 'comments', [Comments::class, 'index']);
+$routes->get('comments', [Comments::class, 'index']);
 //guest routes
 $routes->match(['get', 'post'], 'guest/create', [Guest::class, 'create']);
 $routes->get('guest', [Guest::class, 'index']);
