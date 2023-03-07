@@ -312,9 +312,9 @@
 
           <div class="col-lg-6">
           <?= session()->getFlashdata('error') ?>
-            <form action="/lab3/ci4/public/comments" method="post" role="form" class="php-email-form">
+            <form action="~rcsumalde/lab3/ci4/public/comments" method="post" role="form" class="php-email-form">
             <?= csrf_field() ?>
-              <div class="text-center"><a href="/lab3/ci4/public/comments"><button type="submit" name="submit" value="Create guest item">Send a Message</button></a></div>
+              <div class="text-center"><a href="~rcsumalde/lab3/ci4/public/comments"><button type="submit" name="submit" value="Create guest item">Send a Message</button></a></div>
             </form>
           </div>
 
